@@ -3,9 +3,9 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-    <div className='text-3xl '>
+    <section className='text-3xl mt-[20vh]'>
     Hero
-    </div>
+    </section>
     </>
   )
 }

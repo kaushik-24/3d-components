@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+import NavBar from "./components/NavBar";
 
 const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: "400",
+  weight: "600",
+  style: "italic",
 })
-
 
 export const metadata: Metadata = {
   title: "3D-Components",
@@ -21,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair} antialiased`}
-      >
+        className={`${playfair.variable} antialiased`}
+      > <NavBar />
         {children}
       </body>
     </html>

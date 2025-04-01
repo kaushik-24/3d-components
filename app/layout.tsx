@@ -18,7 +18,6 @@ const poppins = Poppins({
   style: "italic",
 })
 
-
 export const metadata: Metadata = {
   title: "3D-Components",
   description: "Free 3D components for website using three.js",

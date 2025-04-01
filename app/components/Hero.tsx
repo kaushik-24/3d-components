@@ -5,7 +5,6 @@ const kavoon = Kavoon({
   subsets: ["latin"],
   weight: "400",
 })
-
 const Hero = () => {
   return (
     <>
